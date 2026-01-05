@@ -1,4 +1,22 @@
 .nav-bar {
     display: flex;
-    gap: 20px;
+    background-color: var(--secondary);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    color: var(--primary);
+    display: flex;
 }

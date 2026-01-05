@@ -1,24 +1,12 @@
 /* Put general CSS for the whole site in here */
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light;
   --text: #121212;
   --background: #ffeed7;
   --primary: #0e5130;
   --secondary: #9eb582;
   --accent: #b6ae86;
-
-  color: var(--text);
-  background-color: var(--background);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 :root[data-theme="dark"] {
@@ -30,10 +18,24 @@
   --accent: #c0c799;
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+}
+
+
+html {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+}
+
+body {
+  background-color: var(--background);
   min-width: 320px;
   min-height: 100vh;
 }
