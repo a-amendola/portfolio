@@ -25,8 +25,10 @@ export function NavBar({ theme, setTheme }) {
                         />
                     </svg>
                 </div>
-                <p>Ashley Amendola's portfolio</p>
-                <a href="">Test link</a>
+                <div className='name-stack'>
+                    <p><b>Ashley Amendola</b></p>
+                    <p>Web Developer</p>
+                </div>
             </div>
             <div className="nav-section">
                 <button 

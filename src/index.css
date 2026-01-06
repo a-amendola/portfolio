@@ -104,6 +104,10 @@ svg {
   display: block;
 }
 
+section {
+  padding: 72px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     color-scheme: dark;
@@ -112,5 +116,19 @@ svg {
     --primary: #85c16c;
     --secondary: #90d094;
     --accent: #c0c799;
+  }
+}
+
+/* tablet breakpoint */
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 72px 24px 72px 24px;
+  }
+}
+
+/* mobile breakpoint */
+@media screen and (max-width: 640px) {
+  section {
+    padding: 48px 24px 48px 24px;
   }
 }

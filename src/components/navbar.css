@@ -7,6 +7,7 @@
     z-index: 15;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px 10px 20px;
 }
 
 .nav-section {
@@ -19,4 +20,13 @@
     width: 40px;
     color: var(--primary);
     display: flex;
+}
+
+.name-stack {
+    text-align: left;
+}
+
+.name-stack p {
+    margin-bottom: 0;
+    line-height: 1.3;
 }
