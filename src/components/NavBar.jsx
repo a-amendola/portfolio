@@ -19,13 +19,14 @@ export function NavBar({ theme, setTheme }) {
                             M70 55 H95"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="8"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                         />
                     </svg>
                 </div>
                 <p>Ashley Amendola's portfolio</p>
+                <a href="">Test link</a>
             </div>
             <div className="nav-section">
                 <button 
