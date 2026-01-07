@@ -85,6 +85,20 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
+.a-bubble {
+  text-decoration: none;
+  color: var(--background);
+  background-color: var(--primary);
+  padding: 7px 20px;
+  border-radius: 25px;
+  transition: background-color 150ms ease
+}
+
+.a-bubble:hover {
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
 button {
   font: inherit;
   color: inherit;
@@ -104,8 +118,22 @@ svg {
   display: block;
 }
 
+.svg-scale {
+  transition: scale 150ms ease
+}
+
+.svg-scale:hover {
+  scale: 1.2;
+}
+
 section {
   padding: 72px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
