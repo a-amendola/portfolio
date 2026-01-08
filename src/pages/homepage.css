@@ -1,12 +1,18 @@
+.home-page {
+    position: relative;
+    overflow: hidden;
+}
+
 .hero {
     max-width: 900px;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-left {
     width: 50%;
-    /* padding: 30px; */
 }
 
 .hero-left img {
@@ -42,4 +48,32 @@
 
 .hero-right h2 {
     font-size: 2rem;
+}
+
+.wave-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wave-background {
+    position: absolute;
+    width: 300%;
+    left: -100%;
+    height: 100%;
+    animation: wave 25s linear infinite;
+    max-width: unset;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(33.333%);
+    }
 }
