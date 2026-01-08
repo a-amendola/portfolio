@@ -1,0 +1,45 @@
+.hero {
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left {
+    width: 50%;
+    /* padding: 30px; */
+}
+
+.hero-left img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: drop-shadow(
+        -10px -10px color-mix(in srgb, var(--accent) 50%, transparent)
+    );
+}
+
+.hero-right {
+    width: 50%;
+    text-align: left;
+    color: var(--background);
+    background-color: var(--secondary);
+    padding: 30px 40px;
+    border-radius: 25px;
+    aspect-ratio: 1/1 !important;
+    filter: drop-shadow(
+        10px 10px color-mix(in srgb, var(--accent) 50%, transparent)
+    );
+    transform: translate(-20px, 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right h1 {
+    font-size: 3rem;
+}
+
+.hero-right h2 {
+    font-size: 2rem;
+}

@@ -1,7 +1,7 @@
 #root {
   width: 100%;
   text-align: center;
-  background-color: var(--accent);
+  background-color: var(--background);
 }
 
 /* Cool animation that infinitely spins the .logo element */
