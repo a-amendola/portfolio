@@ -21,6 +21,23 @@ export function HomePage() {
                         opacity="1"
                     />
                 </svg>
+
+                <svg 
+                    className="wave-background"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 3600 800" 
+                    preserveAspectRatio="none"
+                >
+                    <path 
+                        d="M0,350 C250,450 350,450 600,350 C850,250 950,250 1200,350 C1450,450 1550,450 1800,350 C2050,250 2150,250 2400,350 C2650,450 2750,450 3000,350 C3250,250 3350,250 3600,350" 
+                        fill="none"
+                        stroke="var(--secondary)"
+                        strokeWidth="30"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        opacity="0.5"
+                    />
+                </svg>
             </div>
 
             <div className="hero flex">
