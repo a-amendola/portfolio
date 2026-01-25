@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import './ProjectCarousel.css';
+import trinetrip from '../assets/trek.jpg'
+import helpinghands from '../assets/helpinghands.jpg'
+import psb from '../assets/psb-parade.jpg'
+import ashleyHero from '../assets/ashley-portfolio.jpg'
 
-// ============================================
-// ADD NEW PROJECTS HERE - Just copy this object format
-// ============================================
 const projects = [
   {
     id: 1,
     name: "Trine Trip",
     industry: "Travel Company",
-    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
+    image: trinetrip,
     url: "https://trinetrip.com/",
     shortDescription: "Comprehensive travel website with complete content creation and SEO optimization.",
     goals: "Create an attractive site that displays all information for potential customers, providing a resource to share without repetitive communication.",
-    services: ["Custom Design & Color Scheme", "Full Development", "Complete Content Writing", "Professional Photo Sourcing", "SEO Setup & Optimization", "Google Analytics & Search Console", "Ongoing Monitoring"],
+    services: ["Custom design & color scheme", "Full development", "Complete content writing", "Professional photo sourcing", "SEO optimization", "Google analytics & search console", "Ongoing monitoring"],
     techStack: ["HTML", "CSS", "JavaScript"],
     results: "Improved search visibility and streamlined customer communication."
   },
@@ -21,55 +22,55 @@ const projects = [
     id: 2,
     name: "Helping Hands",
     industry: "ABA Therapy",
-    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&h=600&fit=crop",
+    image: helpinghands,
     url: "https://helpinghandschildcare.org/",
     shortDescription: "Bilingual therapy center website with blog CMS and professional design.",
-    goals: "Expand website with more information, maintain brand consistency, add Spanish language support, integrate blog functionality.",
-    services: ["Custom Design", "Framer Development", "Image Sourcing & SVG Creation", "Full Spanish Translation", "Blog CMS Setup & Training", "SEO Optimization", "Google Analytics Integration"],
+    goals: "Expand existing website with more information, maintain brand consistency, add Spanish language support, and integrate blog functionality.",
+    services: ["Custom design", "Framer development", "Image sourcing & SVG creation", "Full spanish translation", "Blog CMS setup & training", "SEO optimization", "Google analytics & search console"],
     techStack: ["Framer", "Custom HTML"],
     results: "Successfully reached Spanish-speaking community while maintaining SEO strength."
   },
   {
     id: 3,
     name: "Pennsport String Band",
-    industry: "Mummer Band",
-    image: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&h=600&fit=crop",
+    industry: "Mummers Band",
+    image: psb,
     url: "https://a-amendola.github.io/pennsport-string-band/",
     shortDescription: "Member-focused website with secure PDF library and elder-friendly design.",
     goals: "Create an easy-to-use website for band members (ages 40-60+) to access sheet music, attract new members and event bookings.",
-    services: ["Age-Appropriate Design", "Full Development", "Content Writing", "Organization of 300+ PDFs", "Password-Protected Section", "SEO Setup"],
+    services: ["Age-appropriate design", "Full development", "Content writing", "Organization of 300+ PDFs", "Password-protected section", "SEO optimization"],
     techStack: ["HTML", "CSS", "JavaScript"],
     results: "Streamlined music access for members while protecting proprietary content."
   },
   {
     id: 4,
-    name: "Ashley Amendola Portfolio",
+    name: "My Portfolio",
     industry: "Personal Portfolio",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+    image: ashleyHero,
     url: "https://ashleyamendola.com",
     shortDescription: "Modern portfolio showcasing web development work and services.",
-    goals: "Display previous projects and services to attract new clients with a professional, clean design.",
-    services: ["Custom Design", "React Development", "Content Writing", "Photo Sourcing", "Logo Design & SVG Creation", "Dark Mode Implementation", "SEO Setup"],
-    techStack: ["React", "Vite", "JavaScript", "CSS", "HTML"],
+    goals: "Display previous projects and services to attract new clients with a professional, clean design (this website!).",
+    services: ["Custom design", "React development", "Content writing", "Photo sourcing", "Logo design & SVG creation", "Dark mode implementation", "SEO Setup"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
     results: "Professional showcase of skills and completed projects."
   }
 ];
 
 // Simple Chevron SVG components (replacing lucide-react)
 const ChevronLeft = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
     <polyline points="15 18 9 12 15 6"></polyline>
   </svg>
 );
 
 const ChevronRight = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
     <polyline points="9 18 15 12 9 6"></polyline>
   </svg>
 );
 
 const CloseIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
     <line x1="18" y1="6" x2="6" y2="18"></line>
     <line x1="6" y1="6" x2="18" y2="18"></line>
   </svg>
@@ -99,7 +100,7 @@ export function ProjectCarousel() {
   return (
     <section className="project-carousel-section">
       <div className="carousel-container">
-        <h2 className="carousel-title">Featured Work</h2>
+        <h2 className="carousel-title">Featured work</h2>
         <h3 className="carousel-subtitle">
           Real projects, real results. See how I've helped businesses create their digital presence.
         </h3>
@@ -213,6 +214,14 @@ export function ProjectCarousel() {
                 Visit Website →
               </a>
 
+              <div className="modal-tech-stack">
+                  {selectedProject.techStack.map((tech, index) => (
+                    <span key={index} className="modal-tech-badge">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
               <div className="modal-grid">
                 <div className="modal-section">
                   <h3 className="modal-section-title">Project Goals</h3>
@@ -229,17 +238,6 @@ export function ProjectCarousel() {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
-
-              <div className="modal-tech-section">
-                <h3 className="modal-section-title">Tech Stack</h3>
-                <div className="modal-tech-stack">
-                  {selectedProject.techStack.map((tech, index) => (
-                    <span key={index} className="modal-tech-badge">
-                      {tech}
-                    </span>
-                  ))}
                 </div>
               </div>
 

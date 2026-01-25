@@ -55,7 +55,7 @@
 .carousel-nav-btn {
   position: absolute;
   z-index: 20;
-  background: white;
+  background: var(--secondary);
   border: none;
   border-radius: 50%;
   padding: 0.75rem;
@@ -68,7 +68,6 @@
 }
 
 .carousel-nav-btn:hover {
-  background: #f9fafb;
   transform: scale(1.1);
 }
 
@@ -97,6 +96,7 @@
 .project-card-inner {
   background: var(--secondary);
   border-radius: 1rem;
+  border: var(--accent) 1px solid;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 350px;
@@ -214,7 +214,7 @@
 }
 
 .modal-content {
-  background: white;
+  background: var(--background);
   border-radius: 1.5rem;
   max-width: 56rem;
   width: 100%;
@@ -227,12 +227,12 @@
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  background: #f3f4f6;
+  background: var(--primary);
   border: none;
   border-radius: 50%;
   padding: 0.5rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: scale 0.3s ease;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -240,7 +240,7 @@
 }
 
 .modal-close-btn:hover {
-  background: #e5e7eb;
+  scale: 1.1;
 }
 
 .modal-body {
@@ -249,15 +249,16 @@
 
 .modal-image {
   width: 100%;
-  height: 16rem;
+  height: 19rem;
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
+  border: var(--accent) 1px solid;
 }
 
 .modal-industry {
   font-size: 0.875rem;
-  color: #8b5cf6;
+  color: var(--primary);
   font-weight: 600;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -271,15 +272,16 @@
 
 .modal-link {
   display: inline-block;
-  color: #8b5cf6;
+  color: var(--primary);
   font-weight: 600;
   text-decoration: none;
-  margin-bottom: 2rem;
-  transition: color 0.3s ease;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .modal-link:hover {
-  color: #7c3aed;
+  transform: translateY(-3px);
+  color: var(--primary);
 }
 
 .modal-grid {
@@ -319,30 +321,32 @@
 }
 
 .modal-service-check {
-  color: #8b5cf6;
+  color: var(--primary);
   margin-right: 0.5rem;
   flex-shrink: 0;
 }
 
-.modal-tech-section {
-  background: #f9fafb;
+/* .modal-tech-section {
+  background: var(--primary);
   border-radius: 1rem;
   padding: 1.5rem;
-}
+} */
 
 .modal-tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .modal-tech-badge {
-  background: white;
+  background: var(--primary);
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #374151;
+  color: var(--background);
   border: 1px solid #e5e7eb;
 }
 
