@@ -12,11 +12,12 @@ const projects = [
     industry: "Travel Company",
     image: trinetrip,
     url: "https://trinetrip.com/",
-    shortDescription: "Comprehensive travel website with complete content creation and SEO optimization.",
+    shortDescription: "Travel website with complete content creation and SEO optimization.",
     goals: "Create an attractive site that displays all information for potential customers, providing a resource to share without repetitive communication.",
     services: ["Custom design & color scheme", "Full development", "Complete content writing", "Professional photo sourcing", "SEO optimization", "Google analytics & search console", "Ongoing monitoring"],
     techStack: ["HTML", "CSS", "JavaScript"],
-    results: "Improved search visibility and streamlined customer communication."
+    shortResult: "325% increase in clicks",
+    results: ["177% increase in impressions", "325% increase in website clicks"]
   },
   {
     id: 2,
@@ -28,19 +29,21 @@ const projects = [
     goals: "Expand existing website with more information, maintain brand consistency, add Spanish language support, and integrate blog functionality.",
     services: ["Custom design", "Framer development", "Image sourcing & SVG creation", "Full spanish translation", "Blog CMS setup & training", "SEO optimization", "Google analytics & search console"],
     techStack: ["Framer", "Custom HTML"],
-    results: "Successfully reached Spanish-speaking community while maintaining SEO strength."
+    shortResult: "103% increase in impressions",
+    results: ["103% increase in impressions", "94% increase in website clicks"]
   },
   {
     id: 3,
     name: "Pennsport String Band",
     industry: "Mummers Band",
     image: psb,
-    url: "https://a-amendola.github.io/pennsport-string-band/",
+    url: "https://pennsportstringband.com",
     shortDescription: "Member-focused website with secure PDF library and elder-friendly design.",
     goals: "Create an easy-to-use website for band members (ages 40-60+) to access sheet music, attract new members and event bookings.",
     services: ["Age-appropriate design", "Full development", "Content writing", "Organization of 300+ PDFs", "Password-protected section", "SEO optimization"],
     techStack: ["HTML", "CSS", "JavaScript"],
-    results: "Streamlined music access for members while protecting proprietary content."
+    shortResult: "",
+    results: ""
   },
   {
     id: 4,
@@ -52,7 +55,8 @@ const projects = [
     goals: "Display previous projects and services to attract new clients with a professional, clean design (this website!).",
     services: ["Custom design", "React development", "Content writing", "Photo sourcing", "Logo design & SVG creation", "Dark mode implementation", "SEO Setup"],
     techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
-    results: "Professional showcase of skills and completed projects."
+    shortResult: "",
+    results: ""
   }
 ];
 
@@ -155,6 +159,7 @@ export function ProjectCarousel() {
                     <div className="project-card-content">
                       <div className="project-industry">{project.industry}</div>
                       <h3 className="project-name">{project.name}</h3>
+                      <p className='project-result'><b>{project.shortResult}</b></p>
                       <p className="project-description">{project.shortDescription}</p>
                       {isCenter && (
                         <button className="project-view-btn">
@@ -226,6 +231,22 @@ export function ProjectCarousel() {
                 <div className="modal-section">
                   <h3 className="modal-section-title">Project Goals</h3>
                   <p className="modal-section-text">{selectedProject.goals}</p>
+                {/* </div>
+
+                <div className="modal-section"> */}
+                  {selectedProject.results && (
+                    <div className="modal-results">
+                      <h3 className="modal-section-title">SEO results 3-months post launch</h3>
+                      {/* <p className="modal-section-text">{selectedProject.results}</p> */}
+                      <ul className="modal-services-list">
+                        {selectedProject.results.map((result, index) => (
+                          <li key={index} className="modal-service-item">
+                            <span>{result}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
 
                 <div className="modal-section">
@@ -241,12 +262,21 @@ export function ProjectCarousel() {
                 </div>
               </div>
 
-              {selectedProject.results && (
+              {/* {selectedProject.results && (
                 <div className="modal-results">
-                  <h3 className="modal-section-title">Results</h3>
-                  <p className="modal-section-text">{selectedProject.results}</p>
+                  <h3 className="modal-section-title">SEO results 3-months post launch</h3>
+                  <ul className="modal-services-list">
+                    {selectedProject.results.map((result, index) => (
+                      <li key={index} className="modal-service-item">
+                        <span>{result}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              )}
+              )} */}
+
+
+              
             </div>
           </div>
         </div>
