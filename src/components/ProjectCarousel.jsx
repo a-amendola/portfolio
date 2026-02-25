@@ -62,13 +62,13 @@ const projects = [
 
 // Simple Chevron SVG components (replacing lucide-react)
 const ChevronLeft = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
     <polyline points="15 18 9 12 15 6"></polyline>
   </svg>
 );
 
 const ChevronRight = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
     <polyline points="9 18 15 12 9 6"></polyline>
   </svg>
 );
@@ -105,9 +105,9 @@ export function ProjectCarousel() {
     <section className="project-carousel-section">
       <div className="carousel-container">
         <h2 className="carousel-title">Featured work</h2>
-        <h3 className="carousel-subtitle">
+        <p className="subtitle carousel-subtitle">
           Real projects, real results. See how I've helped businesses create their digital presence.
-        </h3>
+        </p>
 
         {/* Carousel */}
         <div className="carousel-wrapper">

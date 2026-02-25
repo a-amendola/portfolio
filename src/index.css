@@ -46,6 +46,10 @@ p {
   margin-bottom: 1em;
 }
 
+.subtitle {
+  font-size: 1.2rem;
+}
+
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: clamp(2.25rem, 4vw, 3rem);
@@ -161,5 +165,9 @@ section {
 @media screen and (max-width: 640px) {
   section {
     padding: 48px 24px 48px 24px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 }

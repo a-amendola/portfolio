@@ -1,6 +1,7 @@
 import './homepage.css'
 import ashleyImage from '../assets/ashley.JPG'
 import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
+import { Testimonials } from '../components/Testimonials.jsx';
 
 export function HomePage() {
     return (
@@ -55,7 +56,6 @@ export function HomePage() {
 
             <section className='what-i-do flex'>
                 <h2>What I offer</h2>
-                <h3>Every business is different. I provide a full range of services so you can choose what you need, skip what you don't, and get a site that turns visitors into customers.</h3>
                 <div className="service-cards">
                     <div className="service-card">
                         <div>
@@ -106,6 +106,7 @@ export function HomePage() {
             </section>
 
             <ProjectCarousel />
+            <Testimonials />
         </>
     );
 }
