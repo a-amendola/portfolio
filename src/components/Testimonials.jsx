@@ -3,18 +3,18 @@ import './Testimonials.css';
 
 const testimonials = [
   {
-    id: 1,
-    company: "Trine Trip",
-    clientName: "Ritesh Kukrety",
-    testimonial: "I had a logo and a domain, but honestly no clue what I wanted for the website. Ashley worked with me to figure everything out from scratch. The final result is amazing. The colors match my brand perfectly, the design is beautiful, and she even added smart features like automatically updating my latest YouTube video on the homepage. This site has been a game-changer for reaching customers, and her ongoing SEO work has been worth every dollar. She turned my lack of direction into a website that's exactly what my business needed.",
-    url: "https://trinetrip.com/"
-  },
-  {
     id: 2,
     company: "Helping Hands",
     clientName: "Amy Davis",
     testimonial: "I highly recommend Ashley Amendola's services. She recently built a multi page website design for my company. She is thorough, communicative, and timely in all that she does. I was very impressed at how she listened to the vision of my company and was able to turn those ideas into a website. Its has improved my brand, impact in the community, and converted leads to clients.",
     url: "https://helpinghandschildcare.org/"
+  },
+  {
+    id: 1,
+    company: "Trine Trip",
+    clientName: "Ritesh Kukrety",
+    testimonial: "I had a logo and a domain, but honestly no clue what I wanted for the website. Ashley worked with me to figure everything out from scratch. The final result is amazing. The colors match my brand perfectly, the design is beautiful, and she even added smart features like automatically updating my latest YouTube video on the homepage. This site has been a game-changer for reaching customers, and her ongoing SEO work has been worth every dollar. She turned my lack of direction into a website that's exactly what my business needed.",
+    url: "https://trinetrip.com/"
   },
   {
     id: 3,
@@ -73,9 +73,9 @@ export function Testimonials() {
             <p className="testimonial-text">"{currentTestimonial.testimonial}"</p>
             
             <div className="testimonial-author">
-                <div className="author-name">{currentTestimonial.clientName}</div>
-                <div className="author-company">{currentTestimonial.company}</div>
-                <a href={currentTestimonial.url} className="visit-site" target="_blank" rel="noopener noreferrer">Visit website →</a>
+                <p className="author-name">{currentTestimonial.clientName}</p>
+                <p className="author-company">{currentTestimonial.company}</p>
+                <a href={currentTestimonial.url} className="visit-site" target="_blank" rel="noopener">Visit website →</a>
             </div>
           </div>
 
@@ -94,7 +94,7 @@ export function Testimonials() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`testimonial-dot ${index === currentIndex ? 'dot-active' : ''}`}
+                  className={`testimonial-dot ${index === currentIndex ? 'testimonial-dot-active' : ''}`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}

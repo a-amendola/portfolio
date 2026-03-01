@@ -213,7 +213,7 @@ export function ProjectCarousel() {
               <a
                 href={selectedProject.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="modal-link"
               >
                 Visit Website →

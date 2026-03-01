@@ -8,7 +8,7 @@
 }
 
 .testimonials-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -17,14 +17,6 @@
   color: var(--background);
 }
 
-.testimonials-subtitle {
-  text-align: center;
-  color: var(--background);
-  /* opacity: 0.9; */
-  /* font-size: 1.125rem; */
-  max-width: 600px;
-  margin: 0 auto 3rem;
-}
 
 /* ============================================
    TESTIMONIAL CARD
@@ -33,14 +25,13 @@
 .testimonial-card {
   background-color: var(--background);
   border-radius: 25px;
-  padding: 10px 20px;
+  padding: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
   position: relative;
   min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid var(--accent);
   gap: 15px;
 }
 
@@ -54,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .testimonial-text {
@@ -62,14 +53,12 @@
   font-size: 1.25rem;
   line-height: 1.8;
   font-style: italic;
-  margin-bottom: 0;
 }
 
 .testimonial-author {
   display: flex;
   flex-direction: column;
   align-items: left;
-  /* gap: 5px; */
   text-align: left;
 }
 
@@ -77,6 +66,7 @@
   font-weight: 600;
   font-size: 1.125rem;
   color: var(--primary);
+  margin-bottom: 0;
 }
 
 .author-company {
@@ -121,36 +111,32 @@
 }
 
 .nav-btn:hover {
-  /* background-color: var(--accent); */
   transform: scale(1.1);
 }
 
 .testimonial-dots {
   display: flex;
-  gap: 0.75rem;
-  align-items: center;
+  gap: 0.5rem;
 }
 
 .testimonial-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--secondary);
-  opacity: 0.5;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--secondary);
+  border: none;
+  cursor: pointer;
   transition: all 0.3s ease;
   padding: 0;
 }
 
 .testimonial-dot:hover {
-  opacity: 0.8;
   transform: scale(1.2);
 }
 
-.dot-active {
-  opacity: 1;
-  width: 12px;
-  height: 12px;
-  background-color: var(--accent);
+.testimonial-dot-active {
+  background: var(--primary);
+  width: 2rem;
 }
 
 /* ============================================
@@ -159,7 +145,6 @@
 
 @media screen and (max-width: 768px) {
   .testimonial-card {
-    padding: 2rem 1.5rem;
     min-height: 400px;
   }
 
@@ -178,22 +163,12 @@
 }
 
 @media screen and (max-width: 640px) {
-  .testimonials-subtitle {
-    font-size: 1rem;
-  }
-
   .testimonial-card {
-    padding: 1.5rem;
     min-height: auto;
   }
 
   .testimonial-text {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .quote-icon {
-    margin-bottom: 1rem;
   }
 
   .quote-icon svg {
