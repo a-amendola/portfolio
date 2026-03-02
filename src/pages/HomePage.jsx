@@ -2,6 +2,7 @@ import './homepage.css'
 import ashleyImage from '../assets/ashley.JPG'
 import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
 import { Testimonials } from '../components/Testimonials.jsx';
+import { Contact } from '../components/Contact.jsx'
 
 export function HomePage() {
     return (
@@ -107,6 +108,7 @@ export function HomePage() {
 
             <ProjectCarousel />
             <Testimonials />
+            <Contact />
         </>
     );
 }

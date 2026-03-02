@@ -1,0 +1,122 @@
+.contact-content {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.contact-content h3, h4 {
+    margin-bottom: 0;
+}
+
+.contact-left {
+  width: 450px;
+  padding: min(10%, 40px);
+  text-align: left;
+}
+
+.contact-left svg {
+  fill: var(--primary);
+}
+
+.contact-left a {
+  color: var(--text);
+  display: inline-block;
+  transition: all 150ms ease;
+}
+
+.contact-left a:hover {
+  transform: translateY(-3px);
+}
+
+.contact-left p {
+  margin-top: 0;
+}
+
+.contact-left hr {
+    border-color: var(--accent);
+}
+
+.contact-emails {
+  display: flex;
+  padding: 20px 0px 0px 20px;
+}
+
+.contact-emails svg {
+  stroke: var(--primary);
+  fill: var(--primary);
+  stroke-width: 20;
+}
+
+.contact-emails-text {
+  padding-left: 20px;
+}
+
+.contact-h4-padding-top {
+  padding-top: 10px;
+}
+
+.contact-phone {
+  display: flex;
+  padding: 20px 0px 0px 20px;
+}
+
+.contact-phone svg {
+  stroke: var(--primary);
+  fill: var(--primary);
+}
+
+.contact-whatsapp {
+  display: flex;
+  padding: 20px 0px 0px 20px;
+}
+
+.contact-whatsapp svg {
+  fill: var(--primary);
+}
+
+.contact-whatsapp-text {
+  padding-left: 20px;
+}
+
+#follow-socials-text {
+  padding-top: 40px;
+}
+
+.follow-socials {
+  padding-top: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.follow-socials a {
+  width: 40px;
+  transition: transform 150ms ease;
+}
+
+.follow-socials a:hover {
+  transform: scale(1.1);
+}
+
+.follow-socials a svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.contact-right {
+  width: 550px;
+  margin: 0 40px 0 40px;
+  padding: 40px;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.contact-right hr {
+  border-color: var(--primary);
+}
