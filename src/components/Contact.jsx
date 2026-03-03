@@ -4,7 +4,7 @@ import { ContactForm } from './ContactForm.jsx'
 
 export function Contact() {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id='contact'>
       <div className="contact-container">
         <h2 className="contact-title">Let's build something great</h2>
 

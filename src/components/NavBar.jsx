@@ -36,7 +36,7 @@ export function NavBar({ theme, setTheme }) {
                     <p className='large-screen-text'>Available for hire</p>
                     <p className='small-screen-text'>Available</p>
                 </div>
-                <a href="" className='a-bubble'>Contact me</a>
+                <a href="#contact" className='a-bubble'>Contact me</a>
                 <button 
                     onClick={toggleTheme} 
                     aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
