@@ -120,3 +120,12 @@
 .contact-right hr {
   border-color: var(--primary);
 }
+
+
+@media screen and (max-width: 575px) {
+  .contact-right {
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0;
+  }
+}
