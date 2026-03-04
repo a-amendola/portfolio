@@ -3,6 +3,7 @@ import ashleyImage from '../assets/ashley.JPG'
 import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
 import { Testimonials } from '../components/Testimonials.jsx';
 import { Contact } from '../components/Contact.jsx'
+import { AshleyIntro } from '../components/AshleyIntro.jsx';
 
 export function HomePage() {
     return (
@@ -108,6 +109,7 @@ export function HomePage() {
 
             <ProjectCarousel />
             <Testimonials />
+            <AshleyIntro />
             <Contact />
         </>
     );

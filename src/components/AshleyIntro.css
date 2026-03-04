@@ -1,0 +1,60 @@
+.ashley-intro {
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    border: var(--primary) 2px solid;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-text a {
+    color: var(--background);
+    width: max-content;
+}
+
+.intro-text a:hover {
+    color: var(--primary);
+}
+
+.intro-paragraphs {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.intro-paragraphs p {
+    font-size: 1.05rem;
+}
+
+@media screen and (max-width: 800px) {
+  .intro-paragraphs {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    .intro-paragraphs p {
+        font-size: 1rem;
+    }
+
+    .intro-text h4 {
+        font-size: 1rem;
+    }
+}

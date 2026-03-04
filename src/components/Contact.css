@@ -11,6 +11,7 @@
 .contact-left {
   width: 450px;
   padding: min(10%, 40px);
+  padding-bottom: 0;
   text-align: left;
 }
 
