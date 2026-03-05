@@ -105,9 +105,9 @@ export function ProjectCarousel() {
     <section className="project-carousel-section" id='projects'>
       <div className="carousel-container">
         <h2 className="carousel-title">Featured work</h2>
-        <p className="subtitle carousel-subtitle">
+        <h3 className="carousel-subtitle">
           Real projects, real results. See how I've helped businesses create their digital presence.
-        </p>
+        </h3>
 
         {/* Carousel */}
         <div className="carousel-wrapper">

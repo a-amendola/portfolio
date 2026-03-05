@@ -39,10 +39,6 @@
     max-width: 1200px;
 }
 
-.intro-paragraphs p {
-    font-size: 1.05rem;
-}
-
 @media screen and (max-width: 800px) {
   .intro-paragraphs {
     flex-direction: column;
