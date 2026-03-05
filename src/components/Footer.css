@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--primary);
+    background-color: var(--footer);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,17 +7,17 @@
 }
 
 .footer p {
-    color: var(--background);
+    color: var(--secondary);
     margin-bottom: 0;
 }
 
 .footer .logo {
-    color: var(--background);
+    color: var(--secondary);
 }
 
 .footer-name-stack {
     text-align: left;
-    color: var(--background);
+    color: var(--secondary);
 }
 
 .footer-links {
@@ -32,18 +32,18 @@
 }
 
 .footer-links a {
-    color: var(--background);
+    color: var(--secondary);
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: var(--secondary);
-}
-
-.portfolio-link {
     color: var(--background);
 }
 
-.portfolio-link:hover {
+.portfolio-link {
     color: var(--secondary);
+}
+
+.portfolio-link:hover {
+    color: var(--background);
 }

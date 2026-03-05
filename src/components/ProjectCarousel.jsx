@@ -105,9 +105,9 @@ export function ProjectCarousel() {
     <section className="project-carousel-section" id='projects'>
       <div className="carousel-container">
         <h2 className="carousel-title">Featured work</h2>
-        <p className="subtitle carousel-subtitle">
+        <h3 className="carousel-subtitle">
           Real projects, real results. See how I've helped businesses create their digital presence.
-        </p>
+        </h3>
 
         {/* Carousel */}
         <div className="carousel-wrapper">
@@ -159,7 +159,7 @@ export function ProjectCarousel() {
                     <div className="project-card-content">
                       <div className="project-industry">{project.industry}</div>
                       <h3 className="project-name">{project.name}</h3>
-                      <p className='project-result'><b>{project.shortResult}</b></p>
+                      <p className='project-result'>{project.shortResult}</p>
                       <p className="project-description">{project.shortDescription}</p>
                       {isCenter && (
                         <button className="project-view-btn">

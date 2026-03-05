@@ -1,6 +1,6 @@
 .ashley-intro {
     background-color: var(--secondary);
-    color: var(--background);
+    color: var(--text);
 }
 
 .intro-container {
@@ -25,22 +25,19 @@
 }
 
 .intro-text a {
-    color: var(--background);
     width: max-content;
+    transition: all 0.3s ease;
 }
 
 .intro-text a:hover {
-    color: var(--primary);
+    background-color: var(--primary);
+    transform: scale(1.05);
 }
 
 .intro-paragraphs {
     display: flex;
     gap: 40px;
     max-width: 1200px;
-}
-
-.intro-paragraphs p {
-    font-size: 1.05rem;
 }
 
 @media screen and (max-width: 800px) {

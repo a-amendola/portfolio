@@ -53,6 +53,7 @@ export function HomePage() {
                     <div className="hero-right">
                         <h1>Your business deserves a better website.</h1>
                         <h2>I'm Ashley, a website developer focused on modern, clean design.</h2>
+                        <a href="#projects" className='a-bubble'><h4>See my work →</h4></a>
                     </div>
                 </div>
             </section>
@@ -63,45 +64,45 @@ export function HomePage() {
                     <div className="service-card">
                         <div>
                             <h3>Design & development</h3>
-                            <p>Need a complete custom design? I've got you. Already have mockups? That works too. I'll build a responsive, high-performance website tailored to your needs and level of involvement.</p>
+                            <p>Need a complete custom design? I've got you. I'll build a responsive, high-performance website tailored to your needs.</p>
                         </div>
                         <div>
-                            <h4>Available services:</h4>
+                            {/* <h4>Available services:</h4> */}
                             <ul>
-                                <li>Custom web design</li>
-                                <li>Fully responsive development</li>
-                                <li>Clean, intuitive user experience</li>
-                                <li>Rigorous quality testing</li>
+                                <li>→ Custom web design</li>
+                                <li>→ Fully responsive development</li>
+                                <li>→ Clean, intuitive user experience</li>
+                                <li>→ Rigorous quality testing</li>
                             </ul>
                         </div>
                     </div>
                     <div className="service-card">
                         <div>
                             <h3>Content & SEO</h3>
-                            <p>From content writing to image sourcing to SEO setup, I can handle it all — or just the pieces you need. Tell me what you have, and I'll fill in the gaps.</p>
+                            <p>From content writing and image sourcing to SEO setup, I can handle everything or just the pieces you need.</p>
                         </div>
                         <div>
-                            <h4>Available services:</h4>
+                            {/* <h4>Available services:</h4> */}
                             <ul>
-                                <li>Professional content writing</li>
-                                <li>Image sourcing and optimization</li>
-                                <li>SEO strategy and implementation</li>
-                                <li>Google Analytics setup</li>
+                                <li>→ Professional content writing</li>
+                                <li>→ Image sourcing and optimization</li>
+                                <li>→ SEO strategy and implementation</li>
+                                <li>→ Google Analytics setup</li>
                             </ul>
                         </div>
                     </div>
                     <div className="service-card">
                         <div>
                             <h3>Launch & beyond</h3>
-                            <p>Want to make updates yourself? I'll set up a CMS and train you. Prefer ongoing support? I offer maintenance packages. You decide your level of involvement after launch.</p>
+                            <p>Want to make updates yourself? I'll set up a CMS and train you. Prefer ongoing support? I offer maintenance packages.</p>
                         </div>
                         <div>
-                            <h4>Available services:</h4>
+                            {/* <h4>Available services:</h4> */}
                             <ul>
-                                <li>CMS setup and training</li>
-                                <li>Ongoing website maintenance</li>
-                                <li>Performance monitoring</li>
-                                <li>Content updates and support</li>
+                                <li>→ CMS setup and training</li>
+                                <li>→ Ongoing website maintenance</li>
+                                <li>→ Performance monitoring</li>
+                                <li>→ Content updates and support</li>
                             </ul>
                         </div>
                     </div>
