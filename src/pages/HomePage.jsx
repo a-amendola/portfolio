@@ -4,6 +4,7 @@ import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
 import { Testimonials } from '../components/Testimonials.jsx';
 import { Contact } from '../components/Contact.jsx'
 import { AshleyIntro } from '../components/AshleyIntro.jsx';
+import { Footer } from '../components/Footer.jsx';
 
 export function HomePage() {
     return (
@@ -56,7 +57,7 @@ export function HomePage() {
                 </div>
             </section>
 
-            <section className='what-i-do flex'>
+            <section className='what-i-do flex' id='offers'>
                 <h2>What I offer</h2>
                 <div className="service-cards">
                     <div className="service-card">
@@ -111,6 +112,7 @@ export function HomePage() {
             <Testimonials />
             <AshleyIntro />
             <Contact />
+            <Footer />
         </>
     );
 }

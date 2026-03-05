@@ -102,7 +102,7 @@ export function ProjectCarousel() {
   };
 
   return (
-    <section className="project-carousel-section">
+    <section className="project-carousel-section" id='projects'>
       <div className="carousel-container">
         <h2 className="carousel-title">Featured work</h2>
         <p className="subtitle carousel-subtitle">

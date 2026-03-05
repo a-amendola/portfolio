@@ -1,0 +1,49 @@
+.footer {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer p {
+    color: var(--background);
+    margin-bottom: 0;
+}
+
+.footer .logo {
+    color: var(--background);
+}
+
+.footer-name-stack {
+    text-align: left;
+    color: var(--background);
+}
+
+.footer-links {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    gap: 25px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: var(--background);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--secondary);
+}
+
+.portfolio-link {
+    color: var(--background);
+}
+
+.portfolio-link:hover {
+    color: var(--secondary);
+}

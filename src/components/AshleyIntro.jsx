@@ -4,7 +4,7 @@ import ashleyImage from '../assets/ashley2.JPG'
 
 export function AshleyIntro() {
   return (
-    <section className="ashley-intro">
+    <section className="ashley-intro" id='story'>
       <div className="intro-container">
         <h2 className="intro-title">My story</h2>
         <img src={ashleyImage} alt="Ashley professional headshot" />

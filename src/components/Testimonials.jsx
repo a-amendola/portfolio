@@ -60,7 +60,7 @@ export function Testimonials() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section" id='testimonials'>
       <div className="testimonials-container">
         <h2 className="testimonials-title">Client testimonials</h2>
 
