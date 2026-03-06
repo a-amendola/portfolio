@@ -46,6 +46,7 @@
   stroke: var(--primary);
   fill: var(--primary);
   stroke-width: 20;
+  max-width: unset;
 }
 
 .contact-emails-text {
