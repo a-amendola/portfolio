@@ -130,4 +130,9 @@
     border-radius: 30px;
     margin: 0;
   }
+
+  .contact-left {
+    width: 100%;
+    padding: 40px 0 0 0;
+  }
 }
