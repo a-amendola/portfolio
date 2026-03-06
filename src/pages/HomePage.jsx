@@ -67,7 +67,6 @@ export function HomePage() {
                             <p>Need a complete custom design? I've got you. I'll build a responsive, high-performance website tailored to your needs.</p>
                         </div>
                         <div>
-                            {/* <h4>Available services:</h4> */}
                             <ul>
                                 <li>→ Custom web design</li>
                                 <li>→ Fully responsive development</li>
@@ -82,7 +81,6 @@ export function HomePage() {
                             <p>From content writing and image sourcing to SEO setup, I can handle everything or just the pieces you need.</p>
                         </div>
                         <div>
-                            {/* <h4>Available services:</h4> */}
                             <ul>
                                 <li>→ Professional content writing</li>
                                 <li>→ Image sourcing and optimization</li>
@@ -97,7 +95,6 @@ export function HomePage() {
                             <p>Want to make updates yourself? I'll set up a CMS and train you. Prefer ongoing support? I offer maintenance packages.</p>
                         </div>
                         <div>
-                            {/* <h4>Available services:</h4> */}
                             <ul>
                                 <li>→ CMS setup and training</li>
                                 <li>→ Ongoing website maintenance</li>

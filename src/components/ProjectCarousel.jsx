@@ -261,22 +261,6 @@ export function ProjectCarousel() {
                   </ul>
                 </div>
               </div>
-
-              {/* {selectedProject.results && (
-                <div className="modal-results">
-                  <h3 className="modal-section-title">SEO results 3-months post launch</h3>
-                  <ul className="modal-services-list">
-                    {selectedProject.results.map((result, index) => (
-                      <li key={index} className="modal-service-item">
-                        <span>{result}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )} */}
-
-
-              
             </div>
           </div>
         </div>

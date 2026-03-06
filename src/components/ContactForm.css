@@ -44,5 +44,5 @@
 }
 
 .contact-inputs::placeholder {
-  color: var(--primary);
+  color: var(--text);
 }

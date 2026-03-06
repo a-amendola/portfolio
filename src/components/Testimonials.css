@@ -77,13 +77,14 @@
 }
 
 .visit-site {
-    text-decoration: none;
-    transition: transform 0.3s ease;
+  width: max-content;
+  text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .visit-site:hover {
-    color: var(--primary);
-    transform: translateY(-3px);
+  color: var(--primary);
+  transform: translateY(-3px);
 }
 
 /* ============================================
