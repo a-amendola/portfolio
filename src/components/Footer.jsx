@@ -26,7 +26,7 @@ export function Footer() {
             </div>
         </div>
         <div className="footer-links">
-            <a href="/">Home</a>
+            <a href="/portfolio">Home</a>
             <a href="#offers">What I offer</a>
             <a href="#projects">Featured work</a>
             <a href="#testimonials">Testimonials</a>
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
         <div>
             <p>Copyright © Ashley Amendola • All Rights Reserved</p>
-            <p>Website designed and developed by <a href="/" className='portfolio-link'>Ashley Amendola</a></p>
+            <p>Website designed and developed by <a href="/portfolio" className='portfolio-link'>Ashley Amendola</a></p>
         </div>
     </section>
   );

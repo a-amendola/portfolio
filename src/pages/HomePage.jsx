@@ -1,5 +1,5 @@
 import './homepage.css'
-import ashleyImage from '../assets/ashley.JPG'
+import ashleyImage from '../assets/ashley.webp'
 import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
 import { Testimonials } from '../components/Testimonials.jsx';
 import { Contact } from '../components/Contact.jsx'

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AshleyIntro.css';
-import ashleyImage from '../assets/ashley2.JPG'
+import ashleyImage from '../assets/ashley2.webp'
 
 export function AshleyIntro() {
   return (

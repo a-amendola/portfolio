@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './ProjectCarousel.css';
-import trinetrip from '../assets/trek.jpg'
-import helpinghands from '../assets/helpinghands.jpg'
-import psb from '../assets/psb-parade.jpg'
-import ashleyHero from '../assets/ashley-portfolio.jpg'
+import trinetrip from '../assets/trine-trip.webp'
+import helpinghands from '../assets/helpinghands.webp'
+import psb from '../assets/psb-parade.webp'
+import ashleyHero from '../assets/ashley-portfolio.webp'
 
 const projects = [
   {
