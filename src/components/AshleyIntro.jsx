@@ -7,7 +7,7 @@ export function AshleyIntro() {
     <section className="ashley-intro" id='story'>
       <div className="intro-container">
         <h2 className="intro-title">My story</h2>
-        <img src={ashleyImage} alt="Ashley professional headshot" />
+        <img src={ashleyImage} alt="Ashley professional headshot" loading="lazy"/>
         <div className="intro-text">
             <h3>Hi! I'm Ashley, a web developer with a bit of a backstory.</h3>
             <div className="intro-paragraphs">

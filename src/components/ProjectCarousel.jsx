@@ -151,6 +151,7 @@ export function ProjectCarousel() {
                       <img
                         src={project.image}
                         alt={project.name}
+                        loading="lazy"
                       />
                       {!isCenter && <div className="project-card-overlay"></div>}
                     </div>
@@ -205,6 +206,7 @@ export function ProjectCarousel() {
                 src={selectedProject.image}
                 alt={selectedProject.name}
                 className="modal-image"
+                loading="lazy"
               />
 
               <div className="modal-industry">{selectedProject.industry}</div>
