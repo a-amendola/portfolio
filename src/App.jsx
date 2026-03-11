@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { HomePage } from './pages/HomePage';
 import { NavBar } from './components/NavBar'
+import { LoadingScreen } from "./components/LoadingScreen";
 import './App.css'
 
 function getInitialTheme() {
@@ -17,11 +18,16 @@ function getInitialTheme() {
 
 function App() {
   const [theme, setTheme] = useState(getInitialTheme);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  if (isLoading) {
+    return <LoadingScreen onLoadComplete={() => setIsLoading(false)} />;
+  }
 
   return (
     <>
