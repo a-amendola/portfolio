@@ -46,3 +46,7 @@
 .contact-inputs::placeholder {
   color: var(--text);
 }
+
+.result {
+  margin: 0 auto;
+}

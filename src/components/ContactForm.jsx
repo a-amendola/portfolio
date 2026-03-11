@@ -39,7 +39,7 @@ export function ContactForm() {
       <input type="text" name="Phone number" placeholder='Your phone number' className="contact-inputs" required></input>
       <textarea name="message" placeholder='Your message...' className="contact-inputs" required></textarea>
       <button type="submit">Submit form</button>
-      <span>{result}</span>
+      <span className='result'>{result}</span>
     </form>
   );
 }
