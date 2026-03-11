@@ -8,22 +8,19 @@
   --secondary: #9eb582;
   --accent: #b6ae86;
   --footer: #2a2d2a;
+  --footer-text: #9eb582;
   --story-text: #121212;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  /* --text: #f3f2ec;
-  --background: #2a2d2a;
-  --primary: #85c16c;
-  --secondary: #90d094;
-  --accent: #c0c799; */
   --text: #b6ae86;
   --background: #2a2d2a;
   --primary: #ffeed7;
   --secondary: #9eb582;
   --accent: #5a8a72;
-  --footer: #121212;
+  --footer: #ffeed7;
+  --footer-text: #5a8a72;
   --story-text: #2a2d2a;
 }
 

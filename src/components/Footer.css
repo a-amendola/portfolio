@@ -7,19 +7,17 @@
 }
 
 .footer p {
-    color: var(--secondary);
-    color: var(--secondary);
+    color: var(--footer-text);
     margin-bottom: 0;
 }
 
 .footer .logo {
-    color: var(--secondary);
+    color: var(--footer-text);
 }
 
 .footer-name-stack {
     text-align: left;
-    color: var(--secondary);
-    color: var(--secondary);
+    color: var(--footer-text);
 }
 
 .footer-links {
@@ -34,8 +32,7 @@
 }
 
 .footer-links a {
-    color: var(--secondary);
-    color: var(--secondary);
+    color: var(--footer-text);
     text-decoration: none;
 }
 
@@ -44,8 +41,7 @@
 }
 
 .portfolio-link {
-    color: var(--secondary);
-    color: var(--secondary);
+    color: var(--footer-text);
 }
 
 .portfolio-link:hover {
