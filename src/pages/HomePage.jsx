@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './homepage.css'
 import ashleyImage from '../assets/ashley.webp'
 import { ProjectCarousel } from '../components/ProjectCarousel.jsx'
@@ -8,8 +7,6 @@ import { AshleyIntro } from '../components/AshleyIntro.jsx';
 import { Footer } from '../components/Footer.jsx';
 
 export function HomePage() {
-    const [imageLoaded, setImageLoaded] = useState(false);
-
     return (
         <>
             <main>
@@ -52,7 +49,7 @@ export function HomePage() {
 
                     <div className="hero flex">
                         <div className="hero-left">
-                            <img src={ashleyImage} alt="Ashley" fetchPriority='high' onLoad={() => setImageLoaded(true)} style={{ opacity: imageLoaded ? 1 : 0 }} />
+                            <img src={ashleyImage} alt="Ashley" fetchPriority='high' onLoad={(e) => {e.target.style.transform = 'translateZ(0)';}} />
                         </div>
                         <div className="hero-right">
                             <h1>Your business deserves a better website.</h1>
