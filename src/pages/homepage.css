@@ -24,6 +24,7 @@
         -10px -10px color-mix(in srgb, var(--accent) 50%, transparent)
     ); */
     filter: drop-shadow(-10px -10px var(--accent-shadow));
+    transition: opacity 0.2s ease;
 }
 
 .hero-right {
