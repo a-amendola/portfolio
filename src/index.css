@@ -10,6 +10,7 @@
   --footer: #2a2d2a;
   --footer-text: #9eb582;
   --story-text: #121212;
+  --accent-shadow: rgba(182, 174, 134, 0.5);
 }
 
 :root[data-theme="dark"] {
@@ -22,6 +23,7 @@
   --footer: #ffeed7;
   --footer-text: #5a8a72;
   --story-text: #2a2d2a;
+  --accent-shadow: rgba(90, 138, 114, 0.5);
 }
 
 *,
