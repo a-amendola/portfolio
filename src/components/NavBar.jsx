@@ -1,11 +1,11 @@
 import './navbar.css'
 
-export function NavBar({ theme, setTheme }) {
-    const isDark = theme === "dark";
+export function NavBar() {
+    // const isDark = theme === "dark";
 
-    const toggleTheme = () => {
-        setTheme(isDark ? "light" : "dark");
-    }
+    // const toggleTheme = () => {
+    //     setTheme(isDark ? "light" : "dark");
+    // }
 
     return (
         <nav className="nav-bar">
@@ -37,7 +37,7 @@ export function NavBar({ theme, setTheme }) {
                     <p className='small-screen-text'>Available</p>
                 </div>
                 <a href="#contact" className='a-bubble'>Contact me</a>
-                <button 
+                {/* <button 
                     onClick={toggleTheme} 
                     aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
                 >
@@ -46,7 +46,7 @@ export function NavBar({ theme, setTheme }) {
                         : 
                         <svg className='svg-scale' width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="var(--primary)"></path> </g></svg>
                     }
-                </button>
+                </button> */}
             </div>
         </nav>
     );

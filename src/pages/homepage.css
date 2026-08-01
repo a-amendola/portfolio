@@ -91,7 +91,7 @@
 
 
 .what-i-do {
-  background-color: var(--accent);
+  background-color: var(--secondary);
   color: var(--background);
   flex-direction: column;
 }
@@ -115,13 +115,7 @@
   border-radius: 20px;
   flex: 1;
   justify-content: space-between;
-  transition: all 0.3s ease;
   gap: 10px;
-}
-
-.service-card:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15),
-              0 0 30px color-mix(in srgb, var(--primary) 60%, transparent);
 }
 
 .service-card h4 {
