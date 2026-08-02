@@ -3,11 +3,54 @@ import './ProjectCarousel.css';
 import trinetrip from '../assets/trine-trip.webp'
 import helpinghands from '../assets/helpinghands.webp'
 import psb from '../assets/psb-parade.webp'
-import ashleyHero from '../assets/ashley-portfolio.webp'
+import maps from '../assets/maps.webp'
+import rescueMisunderstood from '../assets/rescueMisunderstood.webp'
+import dawnLmhc from '../assets/mccarthy-lmhc.webp'
+import daybreak from '../assets/daybreak.jpg'
+import socialStays from '../assets/social-stays.webp'
 
 const projects = [
   {
     id: 1,
+    name: "MAPS",
+    industry: "Industrial Contractor",
+    image: maps,
+    url: "https://mapscollc.com",
+    shortDescription: "Industrial contractor site with advanced SEO and third-party integrations.",
+    goals: "Redesign and migrate an outdated website to a modern, professional custom-coded site that reflects the quality of their work and ranks for service-based searches across the Southeast.",
+    services: ["Custom design & color scheme", "Full React development", "Complete content writing", "DNS migration & Cloudflare hosting", "Instagram feed integration", "Schema markup & structured data", "SEO optimization", "Google Analytics & Search Console", "Ongoing maintenance"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
+    shortResult: "",
+    results: ""
+  },
+  {
+    id: 2,
+    name: "Dawn McCarthy LMHC",
+    industry: "Individual & Couples Therapy",
+    image: dawnLmhc,
+    url: "https://dawnmccarthylmhc.com",
+    shortDescription: "Therapy practice site built to attract new clients, with integrated online booking.",
+    goals: "Build a full five-page site that attracts new therapy clients, makes booking a consultation frictionless, displays practice information in a logical and beautiful way, and cross-links to Dawn's sister consulting practice.",
+    services: ["Custom design & color scheme", "Full React development (5 pages)", "Complete content writing", "Online booking integration", "FAQ schema markup", "Cross-site linking with sister practice", "SEO optimization (schema.org, sitemap, llms.txt)", "Google Analytics & Search Console", "Ongoing maintenance"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
+    shortResult: "",
+    results: ""
+  },
+  {
+    id: 3,
+    name: "Daybreak EMDR Consulting",
+    industry: "EMDR Consulting",
+    image: daybreak,
+    url: "https://daybreakemdrconsulting.com",
+    shortDescription: "One-page landing site for EMDR Consulting business.",
+    goals: "Establish credibility for an EMDRIA Approved Consultant and give visiting therapists a clear, professional resource for booking consultation.",
+    services: ["Custom design & color scheme", "Full React development", "Complete content writing", "Structured data (schema.org @graph)", "Custom OG image design", "Sitemap, robots.txt & llms.txt setup", "DNS configuration & Cloudflare hosting", "SEO optimization"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
+    shortResult: "",
+    results: ""
+  },
+  {
+    id: 4,
     name: "Trine Trip",
     industry: "Travel Company",
     image: trinetrip,
@@ -20,7 +63,7 @@ const projects = [
     results: ["177% increase in impressions", "325% increase in website clicks"]
   },
   {
-    id: 2,
+    id: 5,
     name: "Helping Hands",
     industry: "ABA Therapy",
     image: helpinghands,
@@ -33,7 +76,33 @@ const projects = [
     results: ["103% increase in impressions", "94% increase in website clicks"]
   },
   {
-    id: 3,
+    id: 6,
+    name: "Rescue for the Misunderstood",
+    industry: "Nonprofit Dog Rescue",
+    image: rescueMisunderstood,
+    url: "https://www.savethemisunderstood.org",
+    shortDescription: "Dog rescue site redesigned and migrated from Squarespace 7.0 to 7.1.",
+    goals: "Migrate to Squarespace 7.1, complete visual rebrand with an earthy boutique aesthetic, fix functional issues, and add new pages including a self-managed CMS page for available dogs.",
+    services: ["Squarespace 7.1 migration", "Visual redesign & color scheme", "Custom CSS", "CMS setup & training", "Instagram feed integration", "Application form setup", "PayPal integration", "Bug fixes"],
+    techStack: ["Squarespace", "Custom CSS"],
+    shortResult: "",
+    results: ""
+  },
+  {
+    id: 7,
+    name: "The Social Stays",
+    industry: "Cafe & Hospitality",
+    image: socialStays,
+    url: "",
+    shortDescription: "WhatsApp-based digital menu built for guests staying on-site to browse and order.",
+    goals: "Give guests at a café in Tirthan Valley a fast, app-free digital menu they can browse by category and order from directly, tied to their room or bed for staff fulfillment.",
+    services: ["Custom React build", "WhatsApp deep-link ordering flow", "Room/bed guest identification", "Scroll-spy category navigation", "GitHub Pages hosting"],
+    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
+    shortResult: "",
+    results: ""
+  },
+  {
+    id: 8,
     name: "Pennsport String Band",
     industry: "Mummers Band",
     image: psb,
@@ -44,34 +113,8 @@ const projects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     shortResult: "",
     results: ""
-  },
-  {
-    id: 4,
-    name: "My Portfolio",
-    industry: "Personal Portfolio",
-    image: ashleyHero,
-    url: "https://ashleyamendola.com",
-    shortDescription: "Modern portfolio showcasing web development work and services.",
-    goals: "Display previous projects and services to attract new clients with a professional, clean design (this website!).",
-    services: ["Custom design", "React development", "Content writing", "Photo sourcing", "Logo design & SVG creation", "Dark mode implementation", "SEO Setup"],
-    techStack: ["React", "JavaScript", "CSS", "HTML", "Vite"],
-    shortResult: "",
-    results: ""
   }
 ];
-
-// Simple Chevron SVG components (replacing lucide-react)
-const ChevronLeft = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
-    <polyline points="15 18 9 12 15 6"></polyline>
-  </svg>
-);
-
-const ChevronRight = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
-    <polyline points="9 18 15 12 9 6"></polyline>
-  </svg>
-);
 
 const CloseIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--background)" strokeWidth="2">
@@ -81,25 +124,7 @@ const CloseIcon = () => (
 );
 
 export function ProjectCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedProject, setSelectedProject] = useState(null);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % projects.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
-  };
-
-  const getVisibleProjects = () => {
-    const visible = [];
-    for (let i = -1; i <= 1; i++) {
-      const index = (currentIndex + i + projects.length) % projects.length;
-      visible.push({ ...projects[index], position: i });
-    }
-    return visible;
-  };
 
   return (
     <section className="project-carousel-section" id='projects'>
@@ -109,86 +134,30 @@ export function ProjectCarousel() {
           Real projects, real results. See how I've helped businesses create their digital presence.
         </h3>
 
-        {/* Carousel */}
-        <div className="carousel-wrapper">
-          {/* Navigation Buttons */}
-          <button
-            onClick={prevSlide}
-            className="carousel-nav-btn carousel-nav-prev"
-            aria-label="Previous project"
-          >
-            <ChevronLeft />
-          </button>
-          
-          <button
-            onClick={nextSlide}
-            className="carousel-nav-btn carousel-nav-next"
-            aria-label="Next project"
-          >
-            <ChevronRight />
-          </button>
-
-          {/* Project Cards */}
-          <div className="carousel-track">
-            {getVisibleProjects().map((project) => {
-              const isCenter = project.position === 0;
-              const offset = project.position * 380;
-              
-              return (
-                <div
-                  key={project.id}
-                  className={`project-card ${isCenter ? 'project-card-center' : 'project-card-side'}`}
-                  style={{
-                    transform: `translateX(${offset}px) scale(${isCenter ? 1 : 0.85})`,
-                    zIndex: isCenter ? 10 : 5,
-                    opacity: isCenter ? 1 : 0.6,
-                  }}
-                  onClick={() => isCenter && setSelectedProject(project)}
-                >
-                  <div className="project-card-inner">
-                    {/* Image */}
-                    <div className="project-card-image">
-                      <img
-                        src={project.image}
-                        alt={project.name}
-                        loading="lazy"
-                      />
-                      {!isCenter && <div className="project-card-overlay"></div>}
-                    </div>
-
-                    {/* Content */}
-                    <div className="project-card-content">
-                      <div className="project-industry">{project.industry}</div>
-                      <h3 className="project-name">{project.name}</h3>
-                      <p className='project-result'>{project.shortResult}</p>
-                      <p className="project-description">{project.shortDescription}</p>
-                      {isCenter && (
-                        <button className="project-view-btn">
-                          View Details →
-                        </button>
-                      )}
-                    </div>
-                  </div>
+        <div className="project-grid">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
+              <div className="project-card-inner">
+                <div className="project-card-image">
+                  <img src={project.image} alt={project.name} loading="lazy" />
                 </div>
-              );
-            })}
-          </div>
-
-          {/* Dots Navigation */}
-          <div className="carousel-dots">
-            {projects.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`carousel-dot ${index === currentIndex ? 'carousel-dot-active' : ''}`}
-                aria-label={`Go to project ${index + 1}`}
-              />
-            ))}
-          </div>
+                <div className="project-card-content">
+                  <div className="project-industry">{project.industry}</div>
+                  <h3 className="project-name">{project.name}</h3>
+                  {project.shortResult && <p className='project-result'>{project.shortResult}</p>}
+                  <p className="project-description">{project.shortDescription}</p>
+                  <button className="project-view-btn">View Details →</button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Modal Popup */}
       {selectedProject && (
         <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -200,7 +169,6 @@ export function ProjectCarousel() {
               <CloseIcon />
             </button>
 
-            {/* Modal Content */}
             <div className="modal-body">
               <img
                 src={selectedProject.image}
@@ -211,40 +179,34 @@ export function ProjectCarousel() {
 
               <div className="modal-industry">{selectedProject.industry}</div>
               <h2 className="modal-title">{selectedProject.name}</h2>
-              
-              <a
-                href={selectedProject.url}
-                target="_blank"
-                rel="noopener"
-                className="modal-link"
-              >
-                Visit Website →
-              </a>
+
+              {selectedProject.url && (
+                <a
+                  href={selectedProject.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modal-link"
+                >
+                  Visit Website →
+                </a>
+              )}
 
               <div className="modal-tech-stack">
-                  {selectedProject.techStack.map((tech, index) => (
-                    <span key={index} className="modal-tech-badge">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                {selectedProject.techStack.map((tech, index) => (
+                  <span key={index} className="modal-tech-badge">{tech}</span>
+                ))}
+              </div>
 
               <div className="modal-grid">
                 <div className="modal-section">
                   <h3 className="modal-section-title">Project Goals</h3>
                   <p className="modal-section-text">{selectedProject.goals}</p>
-                {/* </div>
-
-                <div className="modal-section"> */}
                   {selectedProject.results && (
                     <div className="modal-results">
                       <h3 className="modal-section-title">SEO results 3-months post launch</h3>
-                      {/* <p className="modal-section-text">{selectedProject.results}</p> */}
                       <ul className="modal-services-list">
                         {selectedProject.results.map((result, index) => (
-                          <li key={index} className="modal-service-item">
-                            <span>{result}</span>
-                          </li>
+                          <li key={index} className="modal-service-item"><span>{result}</span></li>
                         ))}
                       </ul>
                     </div>

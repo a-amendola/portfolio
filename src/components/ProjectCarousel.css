@@ -21,70 +21,26 @@
 }
 
 /* ============================================
-   CAROUSEL WRAPPER
+   PROJECT GRID
    ============================================ */
 
-.carousel-wrapper {
-  position: relative;
-  height: 500px;
-  display: flex;
-  align-items: center;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto 0;
   justify-content: center;
 }
-
-.carousel-track {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* ============================================
-   NAVIGATION BUTTONS
-   ============================================ */
-
-.carousel-nav-btn {
-  position: absolute;
-  z-index: 20;
-  background: var(--secondary);
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-nav-btn:hover {
-  transform: scale(1.1);
-}
-
-.carousel-nav-prev {
-  left: 1rem;
-}
-
-.carousel-nav-next {
-  right: 1rem;
-}
-
-/* ============================================
-   PROJECT CARDS
-   ============================================ */
 
 .project-card {
-  position: absolute;
-  transition: all 0.5s ease;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.project-card-side {
-  pointer-events: none;
+.project-card:hover {
+  transform: translateY(-6px);
 }
 
 .project-card-inner {
@@ -92,7 +48,9 @@
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card-image {
@@ -107,17 +65,11 @@
   object-fit: cover;
 }
 
-.project-card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(107, 114, 128, 0.4);
-}
-
 .project-card-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-industry {
@@ -150,48 +102,17 @@
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease;
+  margin-top: auto;
+  background: none;
+  border: none;
 }
 
 .project-view-btn:hover {
-  /* color: var(--accent); */
   transform: translateY(-3px);
 }
 
 /* ============================================
-   DOTS NAVIGATION
-   ============================================ */
-
-.carousel-dots {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.5rem;
-}
-
-.carousel-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 9999px;
-  background: var(--secondary);
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0;
-}
-
-.carousel-dot:hover {
-  transform: scale(1.2);
-}
-
-.carousel-dot-active {
-  background: var(--primary);
-  width: 2rem;
-}
-
-/* ============================================
-   MODAL
+   MODAL  (unchanged from before)
    ============================================ */
 
 .modal-overlay {
@@ -201,7 +122,6 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 200;
   z-index: 200;
   display: flex;
   align-items: center;
@@ -340,49 +260,8 @@
    RESPONSIVE
    ============================================ */
 
-
-
 @media screen and (max-width: 768px) {
-  .carousel-wrapper {
-    height: 520px;
-  }
-
-  .carousel-nav-btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .carousel-nav-prev {
-    left: 0.5rem;
-  }
-
-  .carousel-nav-next {
-    right: 0.5rem;
-  }
-
   .modal-body {
     padding: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .project-card-inner {
-    width: 280px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .carousel-nav-prev {
-    left: -15px;
-  }
-
-  .carousel-nav-next {
-    right: -15px;
-  }
-}
-
-@media screen and (max-width: 1330px) {
-  .project-card-side {
-    opacity: 0.4 !important;
   }
 }
