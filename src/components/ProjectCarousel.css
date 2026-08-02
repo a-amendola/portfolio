@@ -101,14 +101,9 @@
   color: var(--primary);
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.3s ease;
   margin-top: auto;
   background: none;
   border: none;
-}
-
-.project-view-btn:hover {
-  transform: translateY(-3px);
 }
 
 /* ============================================
