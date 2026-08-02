@@ -6,7 +6,7 @@ import psb from '../assets/psb-parade.webp'
 import maps from '../assets/maps.webp'
 import rescueMisunderstood from '../assets/rescueMisunderstood.webp'
 import dawnLmhc from '../assets/mccarthy-lmhc.webp'
-import daybreak from '../assets/daybreak.jpg'
+import daybreak from '../assets/daybreak.webp'
 import socialStays from '../assets/social-stays.webp'
 
 const projects = [
