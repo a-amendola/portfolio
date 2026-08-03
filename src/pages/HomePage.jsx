@@ -49,7 +49,7 @@ export function HomePage() {
 
                     <div className="hero flex">
                         <div className="hero-left">
-                            <img src={ashleyImage} alt="Ashley" fetchPriority='high' onLoad={(e) => {e.target.style.transform = 'translateZ(0)';}} />
+                            <img src={ashleyImage} alt="Ashley" fetchpriority='high' width="1266" height="1229" onLoad={(e) => {e.target.style.transform = 'translateZ(0)';}} />
                         </div>
                         <div className="hero-right">
                             <h1>Your business deserves a better website.</h1>

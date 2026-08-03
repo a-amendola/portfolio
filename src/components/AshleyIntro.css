@@ -31,7 +31,7 @@
 
 .intro-text a:hover {
     background-color: var(--primary);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .intro-paragraphs {

@@ -1,0 +1,22 @@
+# Ashley Amendola
+
+> Freelance web developer building custom-coded React websites for small businesses, with a focus on clean design, technical SEO, and ongoing support. Based in the United States, working remotely with clients nationwide.
+
+## Services
+- [Design & Development](https://ashleyamendola.com/#offers): Custom, fully responsive website design and development tailored to each client's brand and goals.
+- [Content & SEO](https://ashleyamendola.com/#offers): Content writing, image sourcing, and SEO strategy including schema markup, sitemaps, and analytics setup.
+- [Launch & Beyond](https://ashleyamendola.com/#offers): CMS setup and training, ongoing website maintenance, performance monitoring, and content updates.
+
+## Featured Work
+- [Featured Projects](https://ashleyamendola.com/#projects): Case studies including MAPS (industrial contractor), Dawn McCarthy LMHC and Daybreak EMDR Consulting (therapy practices), Trine Trip (travel), Helping Hands (ABA therapy), Rescue for the Misunderstood (nonprofit dog rescue), The Social Stays (cafe digital menu), and Pennsport String Band.
+
+## About
+- [My Story](https://ashleyamendola.com/#story): Background, education (Penn State, Computer Science & Economics), and career path into freelance web development.
+- [Resume](https://ashleyamendola.com/resume.pdf): Full resume PDF.
+
+## Contact
+- [Get in Touch](https://ashleyamendola.com/#contact): Contact form, email, phone, and WhatsApp.
+
+## Optional
+- [LinkedIn](https://www.linkedin.com/in/ashley-amendola/)
+- [GitHub](https://github.com/a-amendola)

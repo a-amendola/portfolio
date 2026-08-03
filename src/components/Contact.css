@@ -1,6 +1,5 @@
 .contact-content {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: center;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .contact-left a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .contact-left p {
@@ -93,11 +92,11 @@
 
 .follow-socials a {
   width: 40px;
-  transition: transform 150ms ease;
+  transition: transform 0.3s ease;
 }
 
 .follow-socials a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .follow-socials a svg {
@@ -121,6 +120,12 @@
 
 .contact-right hr {
   border-color: var(--primary);
+}
+
+@media screen and (max-width: 950px) {
+  .contact-content {
+    flex-wrap: wrap-reverse;
+  }
 }
 
 

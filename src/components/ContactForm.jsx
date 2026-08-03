@@ -17,10 +17,10 @@ export function ContactForm() {
 
     const data = await response.json();
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form submitted successfully. Ashley will be in touch soon!");
       event.target.reset();
     } else {
-      setResult("Error");
+      setResult("An error occurred while sending your message, please contact Ashley directly at ashleyamendola0@gmail.com");
     }
   };
 
@@ -34,9 +34,9 @@ export function ContactForm() {
       <input type="checkbox" name="botcheck" className="hidden"></input>
       <div className="h-captcha" data-captcha="true"></div>
 
-      <input type="text" name="Name" placeholder='Your name' className="contact-inputs" required/>
-      <input type="email" name="Email" placeholder='Your email' className="contact-inputs" required/>
-      <input type="text" name="Phone number" placeholder='Your phone number' className="contact-inputs" required></input>
+      <input type="text" name="Name" placeholder='Your name' className="contact-inputs" autoComplete="name" required/>
+      <input type="email" name="Email" placeholder='Your email' className="contact-inputs" autoComplete="email" required/>
+      <input type="text" name="Phone number" placeholder='Your phone number' className="contact-inputs" autoComplete="tel" required></input>
       <textarea name="message" placeholder='Your message...' className="contact-inputs" required></textarea>
       <button type="submit">Submit form</button>
       <span className='result'>{result}</span>
